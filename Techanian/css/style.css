@@ -31,6 +31,9 @@ ul{
     color: #FFFFFF;
     font-size: 1rem;
 }
+.topbar li a:hover{
+  color: var(--primary1);
+}
 .workingTime{
     color: #FFFFFF;
     font-size: 1rem; 
@@ -79,7 +82,12 @@ ul{
 .navbar1 button{
     color: #FF5316;
 }
-
+.dropdown .dropdown-menu{
+  /* background: transparent!important; */
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
 
 
 /* services */
@@ -89,7 +97,7 @@ ul{
 .services-boxes h4{
     text-decoration: none;
     color: #192437;
-    font-size: 2rem;
+    font-size: 1rem;
     
 }
 .services-boxes a:hover {
@@ -350,7 +358,7 @@ ul {
  
   display: inline-block;
   /* float: left; */
-  width: 30%;
+  width: 50%;
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
