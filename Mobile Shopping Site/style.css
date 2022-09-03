@@ -63,3 +63,55 @@ a {
 .menubar li a:hover{
   color: rgba(255, 255, 255, 0.817)!important;
 }
+
+
+/* // top sale css product css */
+
+#topsale{
+    overflow: hidden;
+}
+
+.owl-carousel .item .product img{
+ transition: transform .5s ease;
+}
+.owl-carousel .item .product img:hover{
+    transform: scale(1.1);
+}
+.owl-carousel .owl-nav button{
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+ left: 0;
+}
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next{
+  font-size: 4 5px;
+  color: black;
+  margin-left: -4rem;
+  padding: 0 1rem;
+ }
+ .owl-carousel .owl-nav button.owl-next{
+  right: 0;
+ }
+
+ .grid .grid-item{
+  margin-right: 1.2rem;
+  margin-bottom: 0.7rem;
+ }
+
+
+
+ /* allproduct css */
+
+ .grid{
+  margin-left: 3rem;
+ }
+ #ads_banner img{
+  margin-left: 3rem;
+ }
+
+
+
