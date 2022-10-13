@@ -29,7 +29,7 @@ ul{
 }
 .topbar a{
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 .topbar li a:hover{
   color: var(--primary1);
@@ -72,8 +72,8 @@ ul{
     color: #FF5316;
 } 
 .navbar1 .logo span{
-   font-size: 2rem;
-   font-weight: 500;
+   font-size: 1.7rem;
+   font-weight: bolder;
     color: var(--primary2);
 }
 .navbar1 i{
@@ -435,3 +435,17 @@ ul {
    
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .navbar1 .logo i{
+    font-size: 1rem;
+    color: #FF5316;
+  } 
+  .navbar1 .logo span{
+   font-size: 0.8rem;
+   font-weight: bolder;
+    color: var(--primary2);
+  }
+}
+
+
