@@ -65,6 +65,17 @@
 /* 
     1. Basic
 */
+.whatapp_float{
+    position: fixed;
+    bottom: 50px;
+    left: 30px;
+  }
+  
+  .whatapp_float:hover{
+    width: 50px;
+    height: 70px;
+  }
+  
 
 body {
     font-family: 'Quicksand', sans-serif;
