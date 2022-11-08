@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&family=Rubik:ital,wght@0,300;0,400;0,800;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --main-color: #fe5d3d;
+    --second-coloe: #ffac38;
+    --text-color: #444;
+    --gradiant: linear-gradient(#fe5d3d , #ffac38);
+
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  html::-webkit-scrollbar-track {
+   background: transparent;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 6rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  section{
+    padding: 50px 100px;
+  }
+
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeff;
+    padding: 15px 100px;
+
+  }
+  .logo img{
+    width: 25px;
+  }
+  .menubar{
+    margin-top: 10px;
+    display: flex;
+  }
+  .menubar li{
+    position: relative;
+  }
+  .menubar li a{
+   
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .menubar li a:hover{
+    /* content: ""; */
+    background: var(--gradiant);
+    /* position: absolute;
+    bottom: -4px;
+    left: 0; */
+    
+    /* transition: 0.5s;
+    transform: scale(2, 3); */
+  
+  }
+  /* li a:hover::after{
+    width: 100%;
+  } */
+  #menu-icon{
+    display: none;
+    padding: 34px;
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .header-btn{
+   
+    padding: 10px 20px;
+    margin: 7px;
+    /* z-index: 1000; */
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .header-btn .sign-in{
+    text-decoration: none;
+    justify-content: space-between;
+    background: var(--gradiant);
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    /* margin-left: 15px; */
+  }
+  .header-btn .sign-up{
+    text-decoration: none;
+    justify-content: space-between;
+    /* background: var(--gradiant);
+    color: #fff; */
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    margin-left: 15px;
+  }
+  .header-btn .sign-up{
+    text-decoration: none;
+    color: #444;
+
+  }
+  .header-btn .sign-in:hover{
+    background: var(--main-color);
+  }
+  .header-btn .sign-up:hover{
+    background: var(--main-color);
+  }
+  .home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(img/Car\ Website\ –\ 1@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+  }
+  .text h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .text span{
+    color: var(--main-color);
+  }
+  .text p{
+    margin: 0 0.5rem 0 1rem;
+  }
+  .app-store{
+    display: flex;
+
+  }
+  .app-store img{
+    width: 100px;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+
+
+
+  /* <!-- //////////////////////////////////// Container for booking /////////////////////////////////////////////// -->  */
+
+  .form-container form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background: white;
+  }
+  .input-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 7rem;
+  }
+  .input-box span{
+    font-weight: 500;
+  }
+  .input-box input{
+    padding: 7px;
+    /* display: none; */
+    border: none;
+    background: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  .form-container form .btn{
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #474fa0;
+    color: white;
+    font-size: 1rem;
+
+  }
+  .form-container form .btn:hover{
+    background: var(--main-color);
+
+  }
+  /* <!-- //////////////////////////////////// Container for ride /////////////////////////////////////////////// --> */
+
+  section .ride{
+    margin-top: 450px;
+  } 
+  .heading{
+    margin-bottom: 2rem;
+ position: relative;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+  }
+
+  .heading span{
+    font-size: 25px;
+  }
+  .he{
+  
+    font-weight: bolder ;
+    font-size: 1rem;
+    color: var(--main-color);
+  }
+  .ride_container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem; 
+    /* display: flex; */
+    
+  }
+  .ride_container .box{
+    padding: 20px;
+    text-align: center;
+  }
+  .ride_container .box .bx{
+    font-size: 34px;
+    padding: 10px;
+    background: #fff;
+    color: var(--main-color);
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .ride_container .box{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.4rem 0  0.5rem;
+  }
+  .ride_container .box .bx:hover{
+    background: var(--main-color);
+    color: #fff;
+  }
+
+
+
+  /* <!-- //////////////////////////////////// Container for Services/////////////////////////////////////////////// --> */
+
+  .product-container{
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    margin: 0 3rem; 
+    /* display: flex; */
+    
+  }
+  .product-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px;
+  }
+ .product-image{
+    width: 100%;
+    height: 200px;
+
+  }
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+  }
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+/* .product-brand{
+    text-transform: uppercase;
+} */
+
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.product-info .btn{
+  
+  display: flex;
+  justify-content: center;
+  background: #474fa0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+.product-info .btn:hover{
+  background-color: var(--main-color);
+}
+
+
+
+
+/* /////////////////////////////////Heading Section///////////////////////////////////////// */
+
+.heading1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading1 span{
+  color: var(--main-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+
+/* ///////////////////////////////////About sec??////////////////////////////////////////////               */
+
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 2rem;
+  align-items: center;
+  gap: 1rem;
+}
+.about-img img{
+  width: 100%;
+}
+.about-text span{
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.about-text p{
+  margin: 0.5rem 0 1.4rem;
+}
+.about-text  .btn{
+  padding: 10px 20px;
+  background: #474fa0;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+/* /////////////////////////////Review////////////////////////// */
+
+.review-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px ,auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.rev-img{
+  width: 70px;
+  height: 70px;
+}
+.rev-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--second-coloe);
+}
+.review-container .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.review-container .box h2{
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0 0.5rem;
+}
+.review-container .box p{
+  font-style: italic;
+}
+.review-container .box .star .bx{
+  color: var(--main-color);
+}
+
+
+
+.subscribe{
+  background: linear-gradient(to top right , #fe5d3d ,#ffac38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe h2{
+  font-size: 1.8rem;
+  color: #fff;
+}
+.subscribe .box{
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 0.8rem;
+  padding: 4px 8px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.subscribe .box input{
+  border: none;
+  outline: none;
+}
+.subscribe .box .btn{
+  background: #474fa0;
+  color: #fff;
+    padding: 4px 20px;
+    border-radius: 0.8rem;
+
+
+}
+ /* .social{
+  background: linear-gradient(to top right , #fe5d3d ,#ffac38);
+  align-items: center;
+ } */
+
+.social a{
+  align-items: center;
+  justify-content: space-between;
+  color: #444;
+  padding: 12px;
+  font-size: 23px;
+
+}
+
+
+
+
+
+                                         /* making Responsive */
+
+
+@media (max-width: 991px){
+header{
+   padding: 19px 40px;
+}
+section{
+  padding: 50px 40px;
+}
+}
+@media (max-width: 881px){
+  .home{
+    background-position: left;
+  }
+  .form-container form{
+    bottom: 0.2rem;
+    left: 40px;
+  }
+}
+
+
+@media (max-width: 768px){
+  header{
+     padding: 11px 40px;
+    }
+    #menu-icon{
+      display: initial;
+    }
+    .sign-up{
+      display: none;
+    }
+   
+    .text h2{
+      font-size: 2.5rem;
+    }
+    .home{
+      grid-template-columns: 1fr;
+    }
+    .form-container form{
+      position: unset;
+    }
+    .menubar{
+      position: absolute;
+      top: -700px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: 0.2s ease;
+    }
+    .active{
+      top: 100%;
+    }
+    .menubar a{
+      display: none;
+      padding: 1rem;
+      margin: 1rem;
+      display: block;
+      border-left: 2px solid var(--main-color);
+    }
+    menubar a:hover{
+      color: rgba(255, 255, 255, 0.356);
+      background-color: var(--main-color);
+      border: none;
+    }
+
+    .heading1 span{
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .heading1 h1{
+      font-size: 1.3rem;
+    }
+    .about-container{
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }

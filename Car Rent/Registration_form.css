@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/about.png);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+.regform{
+    width: 800px;
+    background-color: black;
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding: 10px;
+}
+#name{
+    width: 100%;
+    height: 100px;
+
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 225px;
+    color: white;
+    font-size: 18px; 
+    font-weight: 700px;
+}
+.firstname{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.lastname{
+    position: relative;
+    left: 517px;
+    top: -80px;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.company{
+    position: relative;
+    left: 200px;
+    top: -40px;
+    width: 532px;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.email{
+    position: relative;
+    left: 200px;
+    top: -40px;
+    width: 532px;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.code{
+    position: relative;
+    left: 200px;
+    top: -40px;
+    width: 95px;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+}
+.phonenumber{
+    position: relative;
+    left: 200px;
+    top: -40px;
+    width: 270px;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+} 
+.option {
+    position: relative;
+    left: 200px;
+    top: -40px;
+    width: 270px;
+    height: 40px;
+    outline: none;
+    overflow: hidden;
+    line-height: 40px;
+    border-radius:6px;
+    padding: 0 22px;
+    font-size: 16px;
+
+} 
+.Radio{
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 25px;
+    margin-top: 15px;
+    color: white;
+}
+button{
+    background-color: antiquewhite;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid ;
+    padding: 14px;
+}
